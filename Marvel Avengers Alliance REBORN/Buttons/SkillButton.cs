@@ -16,7 +16,7 @@ namespace Marvel_Avengers_Alliance_REBORN.Buttons
         private Skill _skill;
         private bool isEnoughStamina;
         private SpriteFont Georg;
-        public event EventHandler Click;
+        public new event EventHandler Click;
 
         public SkillButton(ContentManager content, string hero_name, string uniform_name, Skill skill)
         {
