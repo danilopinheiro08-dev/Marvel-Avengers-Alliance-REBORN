@@ -77,7 +77,7 @@ namespace Marvel_Avengers_Alliance_REBORN.Models
 
         public int Get_Max_Health()
         {
-            return _max_stamina;
+            return _max_health;
         }
 
         public int Get_Stamina()

@@ -67,8 +67,6 @@ namespace Marvel_Avengers_Alliance_REBORN.Models
 
             actor.Get_Char().Set_Stamina(actor.Get_Char().Get_Stamina() - stamina_cost);
 
-            actor.Get_Char().Set_Stamina(actor.Get_Char().Get_Stamina());
-
             NotifyAll();
         }
     }

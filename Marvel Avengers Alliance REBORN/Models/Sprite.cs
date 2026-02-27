@@ -235,7 +235,6 @@ namespace Marvel_Avengers_Alliance_REBORN.Models
         public void UpdateFrame(float elapsed)
         {
             _Depth = ((_cur_position.Y * (-1)) / 400) + 0.5f;
-            if(_cur_frame % 60 == 29) Console.Out.WriteLine(Position.Y + "has Dept = " + _Depth);
 
             #region Mouse Cast
             _previousMouse = _currentMouse;

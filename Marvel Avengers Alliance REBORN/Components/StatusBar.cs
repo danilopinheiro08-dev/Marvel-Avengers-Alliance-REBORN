@@ -75,12 +75,12 @@ namespace Marvel_Avengers_Alliance_REBORN.Components
             
             spriteBatch.Draw(_texture, new Rectangle(Convert.ToInt32(Position.X) + 43, Convert.ToInt32(Position.Y), _bar_width, MAX_HEIGHT), Color.White);
             spriteBatch.DrawString(Calibri, _type + "                                          " + (_cur_value).ToString(), Position, Color.White);
-            if(_type is Gadget.HEALTH) spriteBatch.DrawString(Conso, _hero_name + "", new Vector2(Position.X + 160, Position.Y + 2), Color.White);
+            if(_type == Gadget.HEALTH) spriteBatch.DrawString(Conso, _hero_name + "", new Vector2(Position.X + 160, Position.Y + 2), Color.White);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            throw new NotImplementedException();
+            Draw(spriteBatch);
         }
     }
 }

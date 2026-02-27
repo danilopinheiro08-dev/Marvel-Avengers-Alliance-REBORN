@@ -155,7 +155,6 @@ namespace Marvel_Avengers_Alliance_REBORN.States
             if (heroes[cur_turn].Get_Sprite_HasTarget()) return;
             heroes[cur_turn].Set_Cur_Skill(((SkillButton)sender).Get_Skill());
             if (heroes[cur_turn].Get_Cur_Skill() == null) return;
-            Console.Out.WriteLine("Skill " + ((SkillButton)sender).Get_Skill().Get_Name()  + " of " + heroes[cur_turn].Get_Name() + " was Clicked");
             heroes[cur_turn].isPickSkill = true;
         }
 
@@ -170,7 +169,6 @@ namespace Marvel_Avengers_Alliance_REBORN.States
             if (heroes[cur_turn].Get_Cur_Skill().Get_NumberOfTargets() == TargetType.One_Enemy)
             {
                 targets.Add(((Sprite)sender).Get_Me());
-                Console.Out.WriteLine(targets[0].Get_Char().Get_Name() + " was Selected");
             }
             else
             {
